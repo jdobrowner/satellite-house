@@ -1,15 +1,29 @@
+var webpack = require('webpack');
 var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
-plugins = [];
-// plugins.push(new webpack.optimize.UglifyJsPlugin());
-// plugins.push(new webpack.DefinePlugin({
-//     'process.env': {
-//       'NODE_ENV': JSON.stringify('production')
-//     }
-//   }));
+var plugins = [
+  new webpack.optimize.CommonsChunkPlugin({names: ['vendor', 'manifest']}),
+  new webpack.DefinePlugin({'process.env': {NODE_ENV: JSON.stringify('production')}}),
+  new UglifyJSPlugin(),
+  new HtmlWebpackPlugin({template: 'src/index.html'})
+];
+
+const VENDOR_LIBS = [
+  'nuka-carousel', 'react', 'react-dom', 'react-router', 'react-router-dom'
+];
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    bundle: './src/index.js',
+    vendor: VENDOR_LIBS
+  },
+  output: {
+    path: path.resolve(__dirname, 'dist/'),
+    filename: '[name].js',
+    publicPath: 'dist/'
+  },
   resolve: {
     extensions: ['.js', '.jsx']
   },
@@ -17,30 +31,24 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: [/node_modules/],
-        use: [{
-          loader: 'babel-loader',
-          options: { presets: ['react', 'es2015', 'stage-1'] }
-          }
-        ]
+        exclude: /node_modules/,
+        use: 'babel-loader'
       },
       {
         test: /png$/,
-        exclude: [/node_modules/],
+        exclude: /node_modules/,
         use: [{
-          loader: 'file'
-          }
+          loader: 'url-loader',
+          options: { limit: 40000 }
+        },
+        'image-webpack-loader'
         ]
       }
     ],
   },
-  output: {
-    path: path.resolve(__dirname),
-    filename: 'dist/bundle.js'
-  },
   plugins: plugins,
   devServer: {
     historyApiFallback: true,
-    contentBase: './dist'
+    contentBase: 'dist/'
   }
 };
