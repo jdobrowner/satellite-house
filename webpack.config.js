@@ -5,8 +5,8 @@ var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 var plugins = [
   new webpack.optimize.CommonsChunkPlugin({names: ['vendor', 'manifest']}),
-  new webpack.DefinePlugin({'process.env': {NODE_ENV: JSON.stringify('production')}}),
-  new UglifyJSPlugin(),
+  // new webpack.DefinePlugin({'process.env': {NODE_ENV: JSON.stringify('production')}}),
+  // new UglifyJSPlugin(),
   new HtmlWebpackPlugin({template: 'src/index.html'})
 ];
 
@@ -21,8 +21,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist/'),
-    filename: '[name].js',
-    publicPath: 'dist/'
+    filename: '[name].js'
   },
   resolve: {
     extensions: ['.js', '.jsx']
@@ -35,13 +34,16 @@ module.exports = {
         use: 'babel-loader'
       },
       {
-        test: /png$/,
+        test: /\.(jpe?g|png|gif|svg)$/i,
         exclude: /node_modules/,
         use: [{
-          loader: 'url-loader',
-          options: { limit: 40000 }
-        },
-        'image-webpack-loader'
+            loader: 'url-loader',
+            options: { limit: 40000 }
+          },
+          {
+              loader: 'image-webpack-loader',
+              options: {}
+          }
         ]
       }
     ],
