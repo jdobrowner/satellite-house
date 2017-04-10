@@ -18,9 +18,12 @@
   "author": "Jason Dobrowner",
   "license": "ISC",
   "dependencies": {
+    "google-map-react": "^0.23.0",
     "nuka-carousel": "^2.0.4",
     "react": "^15.4.2",
+    "react-burger-menu": "^1.10.14",
     "react-dom": "^15.4.2",
+    "react-responsive": "^1.2.7",
     "react-router": "^4.0.0",
     "react-router-dom": "^4.0.0"
   },

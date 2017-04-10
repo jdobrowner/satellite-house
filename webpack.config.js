@@ -11,7 +11,8 @@ var plugins = [
 ];
 
 const VENDOR_LIBS = [
-  'nuka-carousel', 'react', 'react-dom', 'react-router', 'react-router-dom'
+  'nuka-carousel', 'google-map-react', 'react', 'react-dom', 'react-router', 'react-router-dom',
+  'react-responsive', 'react-burger-menu'
 ];
 
 module.exports = {
