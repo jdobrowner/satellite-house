@@ -13726,7 +13726,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 !function (root, name, definition) {
   if (typeof module != 'undefined' && module.exports) module.exports = definition()
-  else if (true) __webpack_require__(354)(name, definition)
+  else if (true) __webpack_require__(368)(name, definition)
   else root[name] = definition()
 }(this, 'bowser', function () {
   /**
@@ -45403,7 +45403,21 @@ module.exports = Snap
 /* 351 */,
 /* 352 */,
 /* 353 */,
-/* 354 */
+/* 354 */,
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */,
+/* 367 */,
+/* 368 */
 /***/ (function(module, exports) {
 
 module.exports = function() {
@@ -45412,7 +45426,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 355 */
+/* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(77);
@@ -45426,4 +45440,4 @@ module.exports = __webpack_require__(78);
 
 
 /***/ })
-],[355]);
+],[369]);
