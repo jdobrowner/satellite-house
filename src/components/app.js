@@ -6,7 +6,7 @@ import Home from './home';
 import Contact from './contact';
 import Elevations from './elevations';
 import FloorPlans from './floor-plans';
-import Materials from './materials';
+import Windows from './windows';
 import Technologies from './technologies';
 import Views from './views';
 
@@ -23,7 +23,7 @@ class App extends Component {
             <Route path="/contact" component={Contact} />
             <Route path="/elevations" component={Elevations} />
             <Route path="/floor-plans" component={FloorPlans} />
-            <Route path="/materials" component={Materials} />
+            <Route path="/materials" component={Windows} />
             <Route path="/technologies" component={Technologies} />
             <Route path="/views" component={Views} />
           </div>

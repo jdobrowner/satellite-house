@@ -61,7 +61,7 @@ export default class Header extends Component {
               <Link to="/floor-plans">Floor Plans</Link><br/><br/>
               <Link to="/elevations">Elevations</Link><br/><br/>
               <Link to="/technologies">Technologies</Link><br/><br/>
-              <Link to="/materials">Materials</Link><br/><br/>
+              <Link to="/materials">Windows</Link><br/><br/>
               <Link to="/contact">Contact</Link>
             </Menu>
           </MediaQuery>
@@ -71,7 +71,7 @@ export default class Header extends Component {
               <Link to="/floor-plans"><li>Floor Plans</li></Link>|
               <Link to="/elevations"><li>Elevations</li></Link>|
               <Link to="/technologies"><li>Technologies</li></Link>|
-              <Link to="/materials"><li>Materials</li></Link>|
+              <Link to="/materials"><li>Windows & Doors</li></Link>|
               <Link to="/contact"><li>Contact</li></Link>
             </ul>
           </MediaQuery>
