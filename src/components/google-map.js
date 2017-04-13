@@ -27,7 +27,8 @@ export default class SimpleMap extends Component {
     return (
         <div className="map-container" style={divStyle1}>
         <GoogleMapReact defaultCenter={defaultProps.center} defaultZoom={defaultProps.zoom}>
-          <Icon lat={34.454977} lng={-119.1918} />
+          <Icon lat={34.454977} lng={-119.1918}
+            bootstrapURLKeys={{ key: 'AIzaSyCjRMZVOaqznmYViZluqxoBFmS8x2slE7w' }} />
           </GoogleMapReact>
         </div>
     );
