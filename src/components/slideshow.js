@@ -39,9 +39,10 @@ export default class Home extends Component {
         }
       }
     ];
+    const style = { height: "50%", maxHeight: "750px" }
     return (
-        <Carousel autoplay={true} autoplayInterval={10000} speed={1000} easing="linear"
-          wrapAround={true} decorators={Decorators}>
+        <Carousel autoplay={this.props.autoplay} autoplayInterval={10000} speed={this.props.speed} easing="linear"
+          wrapAround={true} decorators={Decorators} >
           {this.props.children}
         </Carousel>
     )

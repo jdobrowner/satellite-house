@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Subtitle from './subtitle';
 
 import northElevation from '../../assets/plans/SH-Book_13.png';
 import westElevation from '../../assets/plans/SH-Book_11.png';
@@ -11,27 +12,27 @@ export default class Elevations extends Component {
     return (
       <div className="page">
 
-        <h3>North Elevation</h3>
-        <div className="plan-container">
+        <Subtitle text="North Elevation" />
+        <div className="elevation-container">
           <img src={northElevation} />
         </div>
 
-        <h3>West Elevation</h3>
-        <div className="plan-container">
+        <Subtitle text="West Elevation" />
+        <div className="elevation-container">
           <img src={westElevation} />
         </div>
 
-        <h3>South Elevation</h3>
-        <div className="plan-container">
+        <Subtitle text="South Elevation" />
+        <div className="elevation-container">
           <img src={southElevation} />
         </div>
 
-        <h3>East Elevation</h3>
-        <div className="plan-container">
+        <Subtitle text="East Elevation" />
+        <div className="elevation-container">
           <img src={eastElevation} />
         </div>
 
-        <h3>West Section</h3>
+        <Subtitle text="West Section" />
         <div className="plan-container">
           <img src={westSection} />
         </div>

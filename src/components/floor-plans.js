@@ -1,37 +1,38 @@
 import React, { Component } from 'react';
+import Subtitle from './subtitle';
 import overview from '../../assets/plans/SH-Book_02.png';
 import mainWing from '../../assets/plans/SH-Book_03.png';
 import bedroomWing from '../../assets/plans/SH-Book_04.png';
 import bridge from '../../assets/plans/SH-Book_05.png';
-import sitePlan from '../../assets/plans/SH-Book_16.png';
+import sitePlan from '../../assets/plans/SH-Book_17.png';
 
 export default class FloorPlans extends Component {
   render() {
     return (
       <div className="page">
 
-        <h3>Overview</h3>
-        <div className="plan-container">
+        <Subtitle text="Overview" />
+        <div className="floor-plan-container">
           <img src={overview} />
         </div>
 
-        <h3>Main Wing</h3>
-        <div className="plan-container">
+        <Subtitle text="Main Wing" />
+        <div className="floor-plan-container main-wing">
           <img src={mainWing} />
         </div>
 
-        <h3>Bedroom Wing</h3>
-        <div className="plan-container">
+        <Subtitle text="Bedroom Wing" />
+        <div className="floor-plan-container bedrooms">
           <img src={bedroomWing} />
         </div>
 
-        <h3>Bridge</h3>
-        <div className="plan-container">
+        <Subtitle text="Bridge" />
+        <div className="bridge-container">
           <img src={bridge} />
         </div>
 
-        <h3>Site Plan</h3>
-        <div className="plan-container">
+        <Subtitle text="Site Plan" />
+        <div className="site-plan-container">
           <img src={sitePlan} />
         </div>
 

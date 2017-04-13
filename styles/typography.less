@@ -10,3 +10,30 @@ h1 {
 li:hover {
   color: grey;
 }
+
+.subtitle {
+  padding: 30px 0 30px 0;
+  // marginLeft: '40px',
+  align-self: flex-start;
+  h2 {
+    font-size: 1.3em;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+  div {
+    height: 10px;
+    width: 300px;
+    background-color: @yellow;
+  }
+}
+
+.view-info {
+  padding-top: 20px;
+  align-self: flex-end;
+}
+
+@media (max-width: 1240px) {
+  .subtitle, .view-info {
+    padding-left: 30px;
+  }
+}

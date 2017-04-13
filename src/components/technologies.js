@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Subtitle from './subtitle';
 
 import heatingCooling from '../../assets/plans/SH-Book_07.png';
 import icf from '../../assets/plans/SH-Book_06.png';
@@ -8,13 +9,13 @@ export default class Technologies extends Component {
     return (
       <div className="page">
 
-        <h3>Walls</h3>
-        <div className="plan-container">
+        <Subtitle text="Walls" />
+        <div className="floor-plan-container walls">
           <img src={icf} />
         </div>
 
-        <h3>Heating / Cooling</h3>
-        <div className="plan-container">
+        <Subtitle text="Heating and Cooling" />
+        <div className="floor-plan-container">
           <img src={heatingCooling} />
         </div>
 
