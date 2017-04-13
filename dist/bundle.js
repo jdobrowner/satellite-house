@@ -473,7 +473,8 @@ var SimpleMap = function (_Component) {
         _react2.default.createElement(
           _googleMapReact2.default,
           { defaultCenter: defaultProps.center, defaultZoom: defaultProps.zoom },
-          _react2.default.createElement(Icon, { lat: 34.454977, lng: -119.1918 })
+          _react2.default.createElement(Icon, { lat: 34.454977, lng: -119.1918,
+            bootstrapURLKeys: { key: 'AIzaSyCjRMZVOaqznmYViZluqxoBFmS8x2slE7w' } })
         )
       );
     }
