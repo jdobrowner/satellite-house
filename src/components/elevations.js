@@ -33,7 +33,7 @@ export default class Elevations extends Component {
         </div>
 
         <Subtitle text="West Section" />
-        <div className="plan-container">
+        <div className="elevation-container">
           <img src={westSection} />
         </div>
 

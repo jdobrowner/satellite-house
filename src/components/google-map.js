@@ -6,6 +6,9 @@ import homeIcon from '../../assets/home-icon-4.png';
 const iconStyle = { width: '18px', height: '18px' };
 const Icon = (props) => <div><img src={homeIcon} style={iconStyle}/></div>
 
+// api key AIzaSyCjRMZVOaqznmYViZluqxoBFmS8x2slE7w
+
+
 export default class SimpleMap extends Component {
   constructor() {
     super();
@@ -18,7 +21,7 @@ export default class SimpleMap extends Component {
     };
     const divStyle1 = {
       height: '300px',
-      width: '61.18%'
+      width: '400px'
     };
     const iconStyle = {
       width: '18px',
@@ -26,9 +29,9 @@ export default class SimpleMap extends Component {
     }
     return (
         <div className="map-container" style={divStyle1}>
-        <GoogleMapReact defaultCenter={defaultProps.center} defaultZoom={defaultProps.zoom}>
-          <Icon lat={34.454977} lng={-119.1918}
-            bootstrapURLKeys={{ key: 'AIzaSyCjRMZVOaqznmYViZluqxoBFmS8x2slE7w' }} />
+        <GoogleMapReact defaultCenter={defaultProps.center} defaultZoom={defaultProps.zoom}
+          bootstrapURLKeys={{ key: 'AIzaSyCjRMZVOaqznmYViZluqxoBFmS8x2slE7w' }} >
+          <Icon lat={34.454977} lng={-119.1918} />
           </GoogleMapReact>
         </div>
     );

@@ -44,4 +44,19 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  a {
+    color: @yellow;
+  }
+}
+.notes {
+  align-self: flex-start;
+  padding-bottom: 40px;
+  line-height: 1.4;
+
+}
+
+@media (max-width: 1250px) {
+  .notes {
+    padding: 0 60px 40px 60px;
+  }
 }

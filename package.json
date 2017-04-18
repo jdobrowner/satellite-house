@@ -13,7 +13,8 @@
     "build:css": "rm -f dist/style.css && lessc styles/style.less --autoprefix --clean-css dist/style.css",
     "build": "rm -rf dist && mkdir -p dist && npm run build:css && npm run build:js",
     "watch:css": "npm run build:css && chokidar-cmd -c 'npm run build:css' -t styles/**/*.less",
-    "watch": "webpack --watch & npm run watch:css"
+    "watch": "webpack --watch & npm run watch:css",
+    "deploy": "npm run build && cd dist && echo | surge --domain satellitehouseojai.com"
   },
   "author": "Jason Dobrowner",
   "license": "ISC",

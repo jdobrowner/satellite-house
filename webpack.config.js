@@ -7,7 +7,7 @@ var plugins = [
   new webpack.optimize.CommonsChunkPlugin({names: ['vendor', 'manifest']}),
   // new webpack.DefinePlugin({'process.env': {NODE_ENV: JSON.stringify('production')}}),
   // new UglifyJSPlugin(),
-  new HtmlWebpackPlugin({template: 'src/index.html'})
+  new HtmlWebpackPlugin({template: 'src/200.html', filename: '200.html'})
 ];
 
 const VENDOR_LIBS = [
@@ -51,7 +51,7 @@ module.exports = {
   },
   plugins: plugins,
   devServer: {
-    historyApiFallback: true,
+    historyApiFallback: { index: '200.html' },
     contentBase: 'dist/'
   }
 };
