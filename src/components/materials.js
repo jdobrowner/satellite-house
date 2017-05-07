@@ -15,7 +15,8 @@ export default class Contact extends Component {
       display: 'flex',
       justifyContent: 'center',
       textAlign: 'center',
-      padding: '120px 60px'
+      padding: '120px 60px',
+      fontSize: '1.2em'
     }
     return (
       <div style={style}><p>Materials Page Under Construction</p></div>

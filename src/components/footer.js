@@ -40,7 +40,7 @@ const Footer = () => {
             <div><p>Design by Jason Dobrowner & Wendy Vanguard</p></div>
             <div><p>Drawn by Jason Dobrowner</p></div>
             <div><p>Contact
-              <a className="email-me" href="mailto:jdobrowner@gmail.com"><span className="orange">jdobrowner@gmail.com</span></a>
+              <a className="email-me" href="mailto:jdobrowner@gmail.com"><span className="maroon">jdobrowner@gmail.com</span></a>
             </p></div>
           </div>
         </div>
@@ -53,7 +53,7 @@ const Footer = () => {
               <div><p>Drawn by Jason Dobrowner</p></div>
               <div><p><span className="orange span-padding">|</span></p></div>
               <div><p>Contact
-                <a className="email-me" href="mailto:jdobrowner@gmail.com"><span className="orange">jdobrowner@gmail.com</span></a>
+                <a className="email-me" href="mailto:jdobrowner@gmail.com"><span className="maroon">jdobrowner@gmail.com</span></a>
               </p></div>
             </div>
           </div>

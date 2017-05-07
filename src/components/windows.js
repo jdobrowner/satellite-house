@@ -245,7 +245,7 @@ export default class Windows extends Component {
             </tr>
           </tbody>
         </table>
-
+        <br/><br/><br/>
       </div>
     )
   }

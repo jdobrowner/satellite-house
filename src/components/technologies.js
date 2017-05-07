@@ -36,6 +36,7 @@ export default class Technologies extends Component {
           <img src={heatingCooling} />
         </div>
 
+        <br/><br/>
       </div>
     )
   }

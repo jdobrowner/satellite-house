@@ -20,8 +20,8 @@ export default class SimpleMap extends Component {
       zoom: 14
     };
     const divStyle1 = {
-      height: '300px',
-      width: '400px'
+      height: '450px',
+      width: '100%'
     };
     const iconStyle = {
       width: '18px',

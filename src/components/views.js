@@ -45,6 +45,7 @@ export default class Views extends Component {
           <Info number={6} info={infoText[5]} />
         </div> */}
 
+        <br/><br/><br/><br/>
         <Subtitle text="Informative Views" />
         <Slideshow speed={300} autoplay={false}>
           <img src={InformativeView1} onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
@@ -53,6 +54,7 @@ export default class Views extends Component {
           <img src={InformativeView4} />
           <img src={InformativeView5} />
         </Slideshow>
+        <br/><br/><br/><br/><br/>
         {/* <div className="info-container">
           <Info number={7} info={infoText[6]} />
           <Info number={8} info={infoText[7]} />
