@@ -7,6 +7,15 @@ import bridge from '../../assets/plans/SH-Book_05.png';
 import sitePlan from '../../assets/plans/SH-Book_16.png';
 
 export default class FloorPlans extends Component {
+  constructor() {
+    super();
+  }
+  componentWillMount() {
+    this.props.pageChange('floor-plans');
+  }
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="page">

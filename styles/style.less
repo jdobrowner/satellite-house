@@ -1,10 +1,17 @@
 @import "reset.less";
+@import "header.less";
+@import "footer.less";
 @import "home.less";
 @import "windows.less";
 @import "plans.less";
 @import "typography.less";
 
 @yellow: #fcd716;
+@orange: #c87718;
+@maroon: #7e212d;
+@lightGrey: #e9e9e9;
+@mediumGrey: #dddddd;
+@darkGreyFont: #2d2d2d;
 
 body {
   width: 100%;
@@ -19,22 +26,17 @@ body {
 
 .app {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.routes {
+  width: 100%;
   max-width: 1500px;
   margin-bottom: 80px;
   display: flex;
   flex-direction: column;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 70px;
-  padding: 0 30px;
-  ul {
-    display: flex;
-    li { padding: 0 10px;}
-  }
 }
 
 .page {
@@ -45,6 +47,9 @@ header {
   flex-direction: column;
   align-items: center;
   a {
+    color: @orange;
+  }
+  a:hover {
     color: @yellow;
   }
 }

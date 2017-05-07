@@ -8,6 +8,15 @@ import eastElevation from '../../assets/plans/SH-Book_12.png';
 import westSection from '../../assets/plans/SH-Book_15.png';
 
 export default class Elevations extends Component {
+  constructor() {
+    super();
+  }
+  componentWillMount() {
+    this.props.pageChange('elevations');
+  }
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="page">

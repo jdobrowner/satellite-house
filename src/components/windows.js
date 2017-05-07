@@ -5,6 +5,15 @@ import windowFP from '../../assets/plans/SH-Book_08.png';
 import details from '../../assets/plans/SH-Book_10.png';
 
 export default class Windows extends Component {
+  constructor() {
+    super();
+  }
+  componentWillMount() {
+    this.props.pageChange('windows');
+  }
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="page windows">

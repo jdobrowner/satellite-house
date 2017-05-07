@@ -14,47 +14,16 @@ import InformativeView3 from '../../assets/views/9_NoRoof.png';
 import InformativeView4 from '../../assets/views/10_NoRoof.png';
 import InformativeView5 from '../../assets/views/11_NoWestWall.png';
 
-const Number = (props) => {
-  const divStyle = {
-    display: 'inline-block',
-    width: '20px',
-    height: '20px',
-    borderRadius: '50%',
-    backgroundColor: '#fcd716',
-    textAlign: 'center',
-    lineHeight: '20px',
-    fontSize: '13px'
-  }
-  return <div style={divStyle}>{props.number}</div>
-}
-const Info = (props) => {
-  const pStyle = {
-    display: 'inline-block',
-    paddingLeft: '10px',
-    fontSize: '16px'
-  };
-  return (
-    <div className="view-info">
-      <Number number={props.number} />
-      <p style={pStyle}>{props.info}</p>
-    </div>
-  )
-}
-const infoText = [
-  'Great Room',
-  'Great Room',
-  'Great Room',
-  'Bridge',
-  'Bridge & Hallway',
-  'Hallway',
-  "Bird's Eye View",
-  "Bird's Eye View",
-  "Bird's Eye View - No Roof",
-  'Bedroom Wing - No Roof',
-  'Sectional View - No West Wall'
-];
-
 export default class Views extends Component {
+  constructor() {
+    super();
+  }
+  componentWillMount() {
+    this.props.pageChange('views');
+  }
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="page">
@@ -67,14 +36,14 @@ export default class Views extends Component {
           <img src={InteriorView5} />
           <img src={InteriorView6} />
         </Slideshow>
-        <div className="info-container">
+        {/* <div className="info-container">
           <Info number={1} info={infoText[0]} />
           <Info number={2} info={infoText[1]} />
           <Info number={3} info={infoText[2]} />
           <Info number={4} info={infoText[3]} />
           <Info number={5} info={infoText[4]} />
           <Info number={6} info={infoText[5]} />
-        </div>
+        </div> */}
 
         <Subtitle text="Informative Views" />
         <Slideshow speed={300} autoplay={false}>
@@ -84,13 +53,13 @@ export default class Views extends Component {
           <img src={InformativeView4} />
           <img src={InformativeView5} />
         </Slideshow>
-        <div className="info-container">
+        {/* <div className="info-container">
           <Info number={7} info={infoText[6]} />
           <Info number={8} info={infoText[7]} />
           <Info number={9} info={infoText[8]} />
           <Info number={10} info={infoText[9]} />
           <Info number={11} info={infoText[10]} />
-        </div>
+        </div> */}
       </div>
     )
   }

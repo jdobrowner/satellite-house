@@ -885,8 +885,8 @@ var Technologies = function (_Component) {
           ' or ',
           _react2.default.createElement(
             'a',
-            { href: 'http://www.quadlock.com/', target: '_blank' },
-            'Quad-Lock'
+            { href: 'http://www.quadlock.com/ICF-Floors-and-Roofs/quad-deck.htm', target: '_blank' },
+            'Quad-Deck'
           ),
           ', with solar panels mounted on the roof. Interior walls will be lumber construction.'
         ),
@@ -2234,7 +2234,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAAENCAMAAAAo
 /***/ 351:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "dd595b22061227364b7e9a5a6cf68f0f.png";
+module.exports = __webpack_require__.p + "a7176c1bc6d69753b84f21617fb68628.png";
 
 /***/ }),
 
