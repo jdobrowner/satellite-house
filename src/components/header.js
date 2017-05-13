@@ -59,7 +59,6 @@ export default class Header extends Component {
   }
   render() {
     const currentPage = this.props.currentPage;
-    console.log(currentPage);
     return (
       <header>
         <div className="header-container">
@@ -79,7 +78,7 @@ export default class Header extends Component {
                 <Link to="/elevations"><div className={`burger-menu-link ${this.getBackgroundColor('elevations' === currentPage)}`}><p>Elevations</p></div></Link>
                 <Link to="/technologies"><div className={`burger-menu-link ${this.getBackgroundColor('technologies' === currentPage)}`}><p>Technologies</p></div></Link>
                 <Link to="/windows"><div className={`burger-menu-link ${this.getBackgroundColor('windows' === currentPage)}`}><p>Windows</p></div></Link>
-                <Link to="/documents"><div className={`burger-menu-link ${this.getBackgroundColor('documents' === currentPage)}`}><p>documents</p></div></Link>
+                <Link to="/documents"><div className={`burger-menu-link ${this.getBackgroundColor('documents' === currentPage)}`}><p>Documents</p></div></Link>
               </div>
             </Menu>
           </MediaQuery>
@@ -93,7 +92,7 @@ export default class Header extends Component {
               <div className="header-buttons">
                 <Link to="/technologies"><li className={this.getBackgroundColor('technologies' === currentPage)}><p>Technologies</p></li></Link>
                 <Link to="/windows"><li className={this.getBackgroundColor('windows' === currentPage)}><p>Windows</p></li></Link>
-                <Link to="/documents"><li className={this.getBackgroundColor('documents' === currentPage)}><p>documents</p></li></Link>
+                <Link to="/documents"><li className={this.getBackgroundColor('documents' === currentPage)}><p>Documents</p></li></Link>
               </div>
             </ul>
           </MediaQuery>
