@@ -20,7 +20,7 @@ export default class SimpleMap extends Component {
       zoom: 14
     };
     const divStyle1 = {
-      height: '450px',
+      height: '488px',
       width: '100%'
     };
     const iconStyle = {

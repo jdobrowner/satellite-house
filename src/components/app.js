@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 import Header from './header';
 import Home from './home';
-import Materials from './materials';
+import Documents from './documents';
 import Elevations from './elevations';
 import FloorPlans from './floor-plans';
 import Windows from './windows';
@@ -31,7 +31,7 @@ class App extends Component {
             <Header currentPage={this.state.page} pageChange={this.pageChange}/>
             <div className="routes">
               <Route exact path="/" component={ ()=> <Home pageChange={this.pageChange}/> }/>
-              <Route path="/materials" component={ ()=> <Materials pageChange={this.pageChange}/> } />
+              <Route path="/documents" component={ ()=> <Documents pageChange={this.pageChange}/> } />
               <Route path="/elevations" component={ ()=> <Elevations pageChange={this.pageChange}/> } />
               <Route path="/floor-plans" component={ ()=> <FloorPlans pageChange={this.pageChange}/> } />
               <Route path="/windows" component={ ()=> <Windows pageChange={this.pageChange}/> } />

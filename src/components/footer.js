@@ -12,7 +12,7 @@ const Footer = () => {
           <Link to="/elevations"><p>Elevations</p></Link>
         </div>
         <div className="footer-menu-small2">
-          <Link to="/materials"><p>Materials</p></Link>
+          <Link to="/documents"><p>Documents</p></Link>
           <Link to="/technologies"><p>Technologies</p></Link>
           <Link to="/windows"><p>Windows & Doors</p></Link>
         </div>
@@ -30,7 +30,7 @@ const Footer = () => {
             <div><p><span className="yellow">|</span></p></div>
             <Link to="/windows"><p>Windows & Doors</p></Link>
             <div><p><span className="yellow">|</span></p></div>
-            <Link to="/materials"><p>Materials</p></Link>
+            <Link to="/documents"><p>Documents</p></Link>
           </div>
         </div>
       </MediaQuery>

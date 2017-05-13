@@ -634,7 +634,7 @@ var Footer = function Footer() {
                 { className: 'email-me', href: 'mailto:jdobrowner@gmail.com' },
                 _react2.default.createElement(
                   'span',
-                  { className: 'orange' },
+                  { className: 'maroon' },
                   'jdobrowner@gmail.com'
                 )
               )
@@ -698,7 +698,7 @@ var Footer = function Footer() {
                   { className: 'email-me', href: 'mailto:jdobrowner@gmail.com' },
                   _react2.default.createElement(
                     'span',
-                    { className: 'orange' },
+                    { className: 'maroon' },
                     'jdobrowner@gmail.com'
                   )
                 )
@@ -855,8 +855,8 @@ var SimpleMap = function (_Component) {
         zoom: 14
       };
       var divStyle1 = {
-        height: '300px',
-        width: '400px'
+        height: '488px',
+        width: '100%'
       };
       var iconStyle = {
         width: '18px',
@@ -1268,7 +1268,7 @@ var Home = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        null,
+        { className: 'home' },
         _react2.default.createElement(
           _slideshow2.default,
           { speed: 1000, autoplay: true },
@@ -1281,8 +1281,129 @@ var Home = function (_Component) {
         ),
         _react2.default.createElement(
           'div',
-          { className: 'div-with-map' },
-          _react2.default.createElement(_googleMap2.default, null)
+          { className: 'home-content' },
+          _react2.default.createElement(
+            'div',
+            { className: 'div-with-text' },
+            _react2.default.createElement(
+              'div',
+              { className: 'text' },
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  'Project:'
+                ),
+                'Design a minimalist artist\u2019s home with a small footprint on 1 acre lot '
+              )
+            ),
+            _react2.default.createElement('div', { className: 'yellow-bar-home' }),
+            _react2.default.createElement(
+              'div',
+              { className: 'text' },
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  'Challenges:'
+                ),
+                'Climate, building codes, budget, client vision'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'text' },
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  'Flood Zone:'
+                ),
+                'One major constraint is due to the lot being located in a flood zone with building codes that limit the construction materials allowed in the first 4 feet above the highest adjacent grade.'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'text' },
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  'Weather:'
+                ),
+                'Along with the extreme summer heat and cold winters, the client\u2019s wish for thick exterior walls led to the solution of designing for ICF (insulated concrete form) construction.'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'text' },
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  'Size:'
+                ),
+                'Due to the flood plain, a minimum interior floor height of 4 feet needs to be met, potentially causing a more massive structure, which is at odds with the client\u2019s wish for a home that takes up minimal visual space.'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'text' },
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  'Solution:'
+                ),
+                'A suspended bridge, which connects the main structure from a bedroom wing \u2018satellite\u2019 structure, giving the house a lighter look, and unique feature, while allowing potential flood waters to pass underneath.'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'text' },
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  'Easy Access:'
+                ),
+                'Client asked for 1 floor with ramp option and easy overall ADA access.'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'text' },
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  'Goal for Self Sustaining:'
+                ),
+                'Flat roof design offers green roof ability as well as solar panels. Client prefers an all electric house and no gas line would be needed on property.'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'div-with-map' },
+            _react2.default.createElement(_googleMap2.default, null)
+          )
         )
       );
     }
@@ -1345,7 +1466,8 @@ var Contact = function (_Component) {
         display: 'flex',
         justifyContent: 'center',
         textAlign: 'center',
-        padding: '120px 60px'
+        padding: '120px 60px',
+        fontSize: '1.2em'
       };
       return _react2.default.createElement(
         'div',
@@ -1468,7 +1590,9 @@ var Technologies = function (_Component) {
           'div',
           { className: 'floor-plan-container' },
           _react2.default.createElement('img', { src: _SHBook_2.default })
-        )
+        ),
+        _react2.default.createElement('br', null),
+        _react2.default.createElement('br', null)
       );
     }
   }]);
@@ -1594,6 +1718,10 @@ var Views = function (_Component) {
           _react2.default.createElement('img', { src: _Hallway2.default }),
           _react2.default.createElement('img', { src: _Hallway4.default })
         ),
+        _react2.default.createElement('br', null),
+        _react2.default.createElement('br', null),
+        _react2.default.createElement('br', null),
+        _react2.default.createElement('br', null),
         _react2.default.createElement(_subtitle2.default, { text: 'Informative Views' }),
         _react2.default.createElement(
           _slideshow2.default,
@@ -1605,7 +1733,12 @@ var Views = function (_Component) {
           _react2.default.createElement('img', { src: _NoRoof2.default }),
           _react2.default.createElement('img', { src: _NoRoof4.default }),
           _react2.default.createElement('img', { src: _NoWestWall2.default })
-        )
+        ),
+        _react2.default.createElement('br', null),
+        _react2.default.createElement('br', null),
+        _react2.default.createElement('br', null),
+        _react2.default.createElement('br', null),
+        _react2.default.createElement('br', null)
       );
     }
   }]);
@@ -2567,7 +2700,10 @@ var Windows = function (_Component) {
               )
             )
           )
-        )
+        ),
+        _react2.default.createElement('br', null),
+        _react2.default.createElement('br', null),
+        _react2.default.createElement('br', null)
       );
     }
   }]);

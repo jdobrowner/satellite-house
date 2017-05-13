@@ -6,9 +6,9 @@ var Menu = require('react-burger-menu').slide;
 var styles = {
   bmBurgerButton: {
     position: 'absolute',
-    width: '40px',
-    height: '30px',
-    right: '30px',
+    width: '32px',
+    height: '25px',
+    right: '35px',
     top: '35px'
   },
   bmBurgerBars: {
@@ -79,7 +79,7 @@ export default class Header extends Component {
                 <Link to="/elevations"><div className={`burger-menu-link ${this.getBackgroundColor('elevations' === currentPage)}`}><p>Elevations</p></div></Link>
                 <Link to="/technologies"><div className={`burger-menu-link ${this.getBackgroundColor('technologies' === currentPage)}`}><p>Technologies</p></div></Link>
                 <Link to="/windows"><div className={`burger-menu-link ${this.getBackgroundColor('windows' === currentPage)}`}><p>Windows</p></div></Link>
-                <Link to="/materials"><div className={`burger-menu-link ${this.getBackgroundColor('materials' === currentPage)}`}><p>Materials</p></div></Link>
+                <Link to="/documents"><div className={`burger-menu-link ${this.getBackgroundColor('documents' === currentPage)}`}><p>documents</p></div></Link>
               </div>
             </Menu>
           </MediaQuery>
@@ -93,7 +93,7 @@ export default class Header extends Component {
               <div className="header-buttons">
                 <Link to="/technologies"><li className={this.getBackgroundColor('technologies' === currentPage)}><p>Technologies</p></li></Link>
                 <Link to="/windows"><li className={this.getBackgroundColor('windows' === currentPage)}><p>Windows</p></li></Link>
-                <Link to="/materials"><li className={this.getBackgroundColor('materials' === currentPage)}><p>Materials</p></li></Link>
+                <Link to="/documents"><li className={this.getBackgroundColor('documents' === currentPage)}><p>documents</p></li></Link>
               </div>
             </ul>
           </MediaQuery>
