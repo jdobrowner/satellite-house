@@ -18,23 +18,23 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(35);
 
-var _header = __webpack_require__(132);
+var _header = __webpack_require__(133);
 
 var _header2 = _interopRequireDefault(_header);
 
-var _home = __webpack_require__(133);
+var _home = __webpack_require__(134);
 
 var _home2 = _interopRequireDefault(_home);
 
-var _materials = __webpack_require__(134);
+var _documents = __webpack_require__(128);
 
-var _materials2 = _interopRequireDefault(_materials);
+var _documents2 = _interopRequireDefault(_documents);
 
-var _elevations = __webpack_require__(128);
+var _elevations = __webpack_require__(129);
 
 var _elevations2 = _interopRequireDefault(_elevations);
 
-var _floorPlans = __webpack_require__(129);
+var _floorPlans = __webpack_require__(130);
 
 var _floorPlans2 = _interopRequireDefault(_floorPlans);
 
@@ -50,7 +50,7 @@ var _views = __webpack_require__(136);
 
 var _views2 = _interopRequireDefault(_views);
 
-var _footer = __webpack_require__(130);
+var _footer = __webpack_require__(131);
 
 var _footer2 = _interopRequireDefault(_footer);
 
@@ -104,8 +104,8 @@ var App = function (_Component) {
             _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: function component() {
                 return _react2.default.createElement(_home2.default, { pageChange: _this2.pageChange });
               } }),
-            _react2.default.createElement(_reactRouterDom.Route, { path: '/materials', component: function component() {
-                return _react2.default.createElement(_materials2.default, { pageChange: _this2.pageChange });
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/documents', component: function component() {
+                return _react2.default.createElement(_documents2.default, { pageChange: _this2.pageChange });
               } }),
             _react2.default.createElement(_reactRouterDom.Route, { path: '/elevations', component: function component() {
                 return _react2.default.createElement(_elevations2.default, { pageChange: _this2.pageChange });
@@ -152,7 +152,148 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _subtitle = __webpack_require__(26);
+var _reactResponsive = __webpack_require__(26);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Documents = function (_Component) {
+  _inherits(Documents, _Component);
+
+  function Documents() {
+    _classCallCheck(this, Documents);
+
+    return _possibleConstructorReturn(this, (Documents.__proto__ || Object.getPrototypeOf(Documents)).call(this));
+  }
+
+  _createClass(Documents, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      this.props.pageChange('documents');
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      window.scrollTo(0, 0);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var style = {
+        display: 'flex',
+        justifyContent: 'center',
+        textAlign: 'center',
+        padding: '120px 60px',
+        fontSize: '1.2em'
+      };
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          _reactResponsive2.default,
+          { maxWidth: 669 },
+          _react2.default.createElement(
+            'div',
+            { className: 'documents' },
+            _react2.default.createElement(Document, { cName: 'odd', big: false, title: 'Government Agencies Checklist', link: 'Government_Agencies_Checklist.pdf' }),
+            _react2.default.createElement(Document, { cName: 'even', big: false, title: 'Zoning Report', link: 'Zoning_Report.pdf' }),
+            _react2.default.createElement(Document, { cName: 'odd', big: false, title: 'Study for Flood Hazard Review', link: 'Study_for_Flood_Hazard_Review.pdf' }),
+            _react2.default.createElement(Document, { cName: 'even', big: false, title: 'Ventura County Building Code', link: '2013_Ventura_County_Building_Code.pdf' }),
+            _react2.default.createElement(Document, { cName: 'odd', big: false, title: 'Ventura County Non-Coastal Zoning Ordinance', link: 'Ventura_County_Non_Coastal_Zoning_Ordinance.pdf' }),
+            _react2.default.createElement(Document, { cName: 'even', big: false, title: 'Ojai Valley Area Plan', link: 'Ojai_Valley_Area_Plan.pdf' }),
+            _react2.default.createElement(Document, { cName: 'odd', big: false, title: 'Ventura County Floodplain Development Standards', link: 'Ventura_County_FLoodplain_Development_Standards.pdf' }),
+            _react2.default.createElement(Document, { cName: 'even', big: false, title: 'FEMA Technical Bulletin: Crawlspace Construction', link: 'FEMA_Technical_Bulletin_Crawlspace_Construction.pdf' }),
+            _react2.default.createElement(Document, { cName: 'odd', big: false, title: 'FEMA Technical Bulletin: Openings in Foundation Walls', link: 'FEMA_Technical_Bulletin_Openings_In_Foundation_Walls.pdf' }),
+            _react2.default.createElement(Document, { cName: 'even', big: false, title: 'National Flood Insurance Program Regulations', link: 'NFIP_Regulations.pdf' })
+          )
+        ),
+        _react2.default.createElement(
+          _reactResponsive2.default,
+          { minWidth: 670 },
+          _react2.default.createElement(
+            'div',
+            { className: 'documents' },
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Government Agencies Checklist', link: 'Government_Agencies_Checklist.pdf' }),
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Zoning Report', link: 'Zoning_Report.pdf' }),
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Study for Flood Hazard Review', link: 'Study_for_Flood_Hazard_Review.pdf' }),
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Ventura County Building Code', link: '2013_Ventura_County_Building_Code.pdf' }),
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Ventura County Non-Coastal Zoning Ordinance', link: 'Ventura_County_Non_Coastal_Zoning_Ordinance.pdf' }),
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Ojai Valley Area Plan', link: 'Ojai_Valley_Area_Plan.pdf' }),
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Ventura County Floodplain Development Standards', link: 'Ventura_County_FLoodplain_Development_Standards.pdf' }),
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'FEMA Technical Bulletin: Crawlspace Construction', link: 'FEMA_Technical_Bulletin_Crawlspace_Construction.pdf' }),
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'FEMA Technical Bulletin: Openings in Foundation Walls', link: 'FEMA_Technical_Bulletin_Openings_In_Foundation_Walls.pdf' }),
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'National Flood Insurance Program Regulations', link: 'NFIP_Regulations.pdf' })
+          )
+        )
+      );
+    }
+  }]);
+
+  return Documents;
+}(_react.Component);
+
+exports.default = Documents;
+
+
+var Document = function Document(props) {
+  return _react2.default.createElement(
+    'div',
+    { className: 'document ' + props.cName },
+    _react2.default.createElement(
+      'div',
+      { className: 'document-title' },
+      _react2.default.createElement(
+        'h5',
+        null,
+        props.title
+      )
+    ),
+    _react2.default.createElement(
+      'a',
+      { href: 'http://satellitehouseojai.com/docs/' + props.link, download: true },
+      _react2.default.createElement(
+        'div',
+        { className: 'download' },
+        props.big ? _react2.default.createElement(
+          'h6',
+          null,
+          'Download'
+        ) : _react2.default.createElement(
+          'h6',
+          null,
+          '\u2B07'
+        )
+      )
+    )
+  );
+};
+
+/***/ }),
+
+/***/ 129:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _subtitle = __webpack_require__(27);
 
 var _subtitle2 = _interopRequireDefault(_subtitle);
 
@@ -250,7 +391,7 @@ exports.default = Elevations;
 
 /***/ }),
 
-/***/ 129:
+/***/ 130:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -266,7 +407,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _subtitle = __webpack_require__(26);
+var _subtitle = __webpack_require__(27);
 
 var _subtitle2 = _interopRequireDefault(_subtitle);
 
@@ -364,7 +505,7 @@ exports.default = FloorPlans;
 
 /***/ }),
 
-/***/ 130:
+/***/ 131:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -380,7 +521,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(35);
 
-var _reactResponsive = __webpack_require__(34);
+var _reactResponsive = __webpack_require__(26);
 
 var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
 
@@ -433,11 +574,11 @@ var Footer = function Footer() {
         { className: 'footer-menu-small2' },
         _react2.default.createElement(
           _reactRouterDom.Link,
-          { to: '/materials' },
+          { to: '/documents' },
           _react2.default.createElement(
             'p',
             null,
-            'Materials'
+            'Documents'
           )
         ),
         _react2.default.createElement(
@@ -585,11 +726,11 @@ var Footer = function Footer() {
           ),
           _react2.default.createElement(
             _reactRouterDom.Link,
-            { to: '/materials' },
+            { to: '/documents' },
             _react2.default.createElement(
               'p',
               null,
-              'Materials'
+              'Documents'
             )
           )
         )
@@ -790,7 +931,7 @@ exports.default = Footer;
 
 /***/ }),
 
-/***/ 131:
+/***/ 132:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -810,7 +951,7 @@ var _googleMapReact = __webpack_require__(72);
 
 var _googleMapReact2 = _interopRequireDefault(_googleMapReact);
 
-var _reactResponsive = __webpack_require__(34);
+var _reactResponsive = __webpack_require__(26);
 
 var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
 
@@ -882,7 +1023,7 @@ exports.default = SimpleMap;
 
 /***/ }),
 
-/***/ 132:
+/***/ 133:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -900,7 +1041,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(35);
 
-var _reactResponsive = __webpack_require__(34);
+var _reactResponsive = __webpack_require__(26);
 
 var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
 
@@ -917,9 +1058,9 @@ var Menu = __webpack_require__(74).slide;
 var styles = {
   bmBurgerButton: {
     position: 'absolute',
-    width: '40px',
-    height: '30px',
-    right: '30px',
+    width: '32px',
+    height: '25px',
+    right: '35px',
     top: '35px'
   },
   bmBurgerBars: {
@@ -981,7 +1122,6 @@ var Header = function (_Component) {
     key: 'render',
     value: function render() {
       var currentPage = this.props.currentPage;
-      console.log(currentPage);
       return _react2.default.createElement(
         'header',
         null,
@@ -1085,14 +1225,14 @@ var Header = function (_Component) {
                   ),
                   _react2.default.createElement(
                     _reactRouterDom.Link,
-                    { to: '/materials' },
+                    { to: '/documents' },
                     _react2.default.createElement(
                       'div',
-                      { className: 'burger-menu-link ' + this.getBackgroundColor('materials' === currentPage) },
+                      { className: 'burger-menu-link ' + this.getBackgroundColor('documents' === currentPage) },
                       _react2.default.createElement(
                         'p',
                         null,
-                        'Materials'
+                        'Documents'
                       )
                     )
                   )
@@ -1179,14 +1319,14 @@ var Header = function (_Component) {
                   ),
                   _react2.default.createElement(
                     _reactRouterDom.Link,
-                    { to: '/materials' },
+                    { to: '/documents' },
                     _react2.default.createElement(
                       'li',
-                      { className: this.getBackgroundColor('materials' === currentPage) },
+                      { className: this.getBackgroundColor('documents' === currentPage) },
                       _react2.default.createElement(
                         'p',
                         null,
-                        'Materials'
+                        'Documents'
                       )
                     )
                   )
@@ -1206,7 +1346,7 @@ exports.default = Header;
 
 /***/ }),
 
-/***/ 133:
+/***/ 134:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1226,7 +1366,7 @@ var _slideshow = __webpack_require__(75);
 
 var _slideshow2 = _interopRequireDefault(_slideshow);
 
-var _googleMap = __webpack_require__(131);
+var _googleMap = __webpack_require__(132);
 
 var _googleMap2 = _interopRequireDefault(_googleMap);
 
@@ -1416,78 +1556,6 @@ exports.default = Home;
 
 /***/ }),
 
-/***/ 134:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Contact = function (_Component) {
-  _inherits(Contact, _Component);
-
-  function Contact() {
-    _classCallCheck(this, Contact);
-
-    return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).call(this));
-  }
-
-  _createClass(Contact, [{
-    key: 'componentWillMount',
-    value: function componentWillMount() {
-      this.props.pageChange('materials');
-    }
-  }, {
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      window.scrollTo(0, 0);
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var style = {
-        display: 'flex',
-        justifyContent: 'center',
-        textAlign: 'center',
-        padding: '120px 60px',
-        fontSize: '1.2em'
-      };
-      return _react2.default.createElement(
-        'div',
-        { style: style },
-        _react2.default.createElement(
-          'p',
-          null,
-          'Materials Page Under Construction'
-        )
-      );
-    }
-  }]);
-
-  return Contact;
-}(_react.Component);
-
-exports.default = Contact;
-
-/***/ }),
-
 /***/ 135:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1504,7 +1572,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _subtitle = __webpack_require__(26);
+var _subtitle = __webpack_require__(27);
 
 var _subtitle2 = _interopRequireDefault(_subtitle);
 
@@ -1624,7 +1692,7 @@ var _slideshow = __webpack_require__(75);
 
 var _slideshow2 = _interopRequireDefault(_slideshow);
 
-var _subtitle = __webpack_require__(26);
+var _subtitle = __webpack_require__(27);
 
 var _subtitle2 = _interopRequireDefault(_subtitle);
 
@@ -1766,7 +1834,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _subtitle = __webpack_require__(26);
+var _subtitle = __webpack_require__(27);
 
 var _subtitle2 = _interopRequireDefault(_subtitle);
 
@@ -2739,7 +2807,7 @@ _reactDom2.default.render(_react2.default.createElement(_app2.default, null), do
 
 /***/ }),
 
-/***/ 26:
+/***/ 27:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
