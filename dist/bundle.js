@@ -202,16 +202,16 @@ var Documents = function (_Component) {
           _react2.default.createElement(
             'div',
             { className: 'documents' },
-            _react2.default.createElement(Document, { cName: 'odd', big: false, title: 'Government Agencies Checklist', link: 'Government_Agencies_Checklist.pdf' }),
-            _react2.default.createElement(Document, { cName: 'even', big: false, title: 'Zoning Report', link: 'Zoning_Report.pdf' }),
-            _react2.default.createElement(Document, { cName: 'odd', big: false, title: 'Study for Flood Hazard Review', link: 'Study_for_Flood_Hazard_Review.pdf' }),
-            _react2.default.createElement(Document, { cName: 'even', big: false, title: 'Ventura County Building Code', link: '2013_Ventura_County_Building_Code.pdf' }),
-            _react2.default.createElement(Document, { cName: 'odd', big: false, title: 'Ventura County Non-Coastal Zoning Ordinance', link: 'Ventura_County_Non_Coastal_Zoning_Ordinance.pdf' }),
-            _react2.default.createElement(Document, { cName: 'even', big: false, title: 'Ojai Valley Area Plan', link: 'Ojai_Valley_Area_Plan.pdf' }),
-            _react2.default.createElement(Document, { cName: 'odd', big: false, title: 'Ventura County Floodplain Development Standards', link: 'Ventura_County_FLoodplain_Development_Standards.pdf' }),
-            _react2.default.createElement(Document, { cName: 'even', big: false, title: 'FEMA Technical Bulletin: Crawlspace Construction', link: 'FEMA_Technical_Bulletin_Crawlspace_Construction.pdf' }),
-            _react2.default.createElement(Document, { cName: 'odd', big: false, title: 'FEMA Technical Bulletin: Openings in Foundation Walls', link: 'FEMA_Technical_Bulletin_Openings_In_Foundation_Walls.pdf' }),
-            _react2.default.createElement(Document, { cName: 'even', big: false, title: 'National Flood Insurance Program Regulations', link: 'NFIP_Regulations.pdf' })
+            _react2.default.createElement(Document, { cName: 'odd', big: false, title: 'Government Agencies Checklist', link: 'government-agencies-checklist' }),
+            _react2.default.createElement(Document, { cName: 'even', big: false, title: 'Zoning Report', link: 'zoning-report' }),
+            _react2.default.createElement(Document, { cName: 'odd', big: false, title: 'Study for Flood Hazard Review', link: 'study-for-flood-hazard-review' }),
+            _react2.default.createElement(Document, { cName: 'even', big: false, title: 'Ventura County Building Code', link: '2013-ventura-county-building-code' }),
+            _react2.default.createElement(Document, { cName: 'odd', big: false, title: 'Ventura County Non-Coastal Zoning Ordinance', link: 'ventura-county-non-coastal-zoning-ordinance' }),
+            _react2.default.createElement(Document, { cName: 'even', big: false, title: 'Ojai Valley Area Plan', link: 'ojai-valley-area-plan' }),
+            _react2.default.createElement(Document, { cName: 'odd', big: false, title: 'Ventura County Floodplain Development Standards', link: 'ventura-county-floodplain-development-standards' }),
+            _react2.default.createElement(Document, { cName: 'even', big: false, title: 'FEMA Technical Bulletin: Crawlspace Construction', link: 'fema-technical-bulletin-crawlspace-construction' }),
+            _react2.default.createElement(Document, { cName: 'odd', big: false, title: 'FEMA Technical Bulletin: Openings in Foundation Walls', link: 'fema-technical-bulletin-openings-in-foundation-walls' }),
+            _react2.default.createElement(Document, { cName: 'even', big: false, title: 'National Flood Insurance Program Regulations', link: 'nfip-regulations' })
           )
         ),
         _react2.default.createElement(
@@ -220,16 +220,16 @@ var Documents = function (_Component) {
           _react2.default.createElement(
             'div',
             { className: 'documents' },
-            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Government Agencies Checklist', link: 'Government_Agencies_Checklist.pdf' }),
-            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Zoning Report', link: 'Zoning_Report.pdf' }),
-            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Study for Flood Hazard Review', link: 'Study_for_Flood_Hazard_Review.pdf' }),
-            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Ventura County Building Code', link: '2013_Ventura_County_Building_Code.pdf' }),
-            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Ventura County Non-Coastal Zoning Ordinance', link: 'Ventura_County_Non_Coastal_Zoning_Ordinance.pdf' }),
-            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Ojai Valley Area Plan', link: 'Ojai_Valley_Area_Plan.pdf' }),
-            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Ventura County Floodplain Development Standards', link: 'Ventura_County_FLoodplain_Development_Standards.pdf' }),
-            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'FEMA Technical Bulletin: Crawlspace Construction', link: 'FEMA_Technical_Bulletin_Crawlspace_Construction.pdf' }),
-            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'FEMA Technical Bulletin: Openings in Foundation Walls', link: 'FEMA_Technical_Bulletin_Openings_In_Foundation_Walls.pdf' }),
-            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'National Flood Insurance Program Regulations', link: 'NFIP_Regulations.pdf' })
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Government Agencies Checklist', link: 'government-agencies-checklist' }),
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Zoning Report', link: 'zoning-report' }),
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Study for Flood Hazard Review', link: 'study-for-flood-hazard-review' }),
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Ventura County Building Code', link: '2013-ventura-county-building-code' }),
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Ventura County Non-Coastal Zoning Ordinance', link: 'ventura-county-non-coastal-zoning-ordinance' }),
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Ojai Valley Area Plan', link: 'ojai-valley-area-plan' }),
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'Ventura County Floodplain Development Standards', link: 'ventura-county-floodplain-development-standards' }),
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'FEMA Technical Bulletin: Crawlspace Construction', link: 'fema-technical-bulletin-crawlspace-construction' }),
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'FEMA Technical Bulletin: Openings in Foundation Walls', link: 'fema-technical-bulletin-openings-in-foundation-walls' }),
+            _react2.default.createElement(Document, { cName: 'even', big: true, title: 'National Flood Insurance Program Regulations', link: 'nfip-regulations' })
           )
         )
       );
@@ -257,7 +257,7 @@ var Document = function Document(props) {
     ),
     _react2.default.createElement(
       'a',
-      { href: 'http://satellitehouseojai.com/docs/' + props.link, download: true },
+      { href: 'https://www.pdf-archive.com/2017/05/16/' + props.link + '/' + props.link + '.pdf', download: true },
       _react2.default.createElement(
         'div',
         { className: 'download' },

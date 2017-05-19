@@ -23,10 +23,14 @@ export default class Windows extends Component {
           <img src={windowFP} />
         </div>
 
+        <div className="greyLine" />
+
         <Subtitle text="Details" />
         <div className="window-detail-container">
           <img src={details} />
         </div>
+
+        <div className="greyLine" />
 
         <Subtitle text="Schedules" />
         <br/>

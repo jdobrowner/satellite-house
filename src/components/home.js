@@ -8,6 +8,9 @@ import FrontCornerRender from '../../assets/renders/FrontCornerRender.png';
 import FromRampRender from '../../assets/renders/FromRampRender.png';
 
 export default class Home extends Component {
+  componentWillMount() {
+    this.props.pageChange('home');
+  }
   render() {
     return (
       <div className="home">

@@ -26,6 +26,8 @@ export default class Technologies extends Component {
           <img src={icf} />
         </div>
 
+        <div className="greyLine" />
+
         <Subtitle text="Heating and Cooling" />
           <p className="notes">
             Heating:  Hydronic radiant floor using tankless electric water heaters, split into 4 zones.

@@ -20,25 +20,34 @@ export default class FloorPlans extends Component {
     return (
       <div className="page">
 
+
         <Subtitle text="Overview" />
         <div className="floor-plan-container">
           <img src={overview} />
         </div>
+
+        <div className="greyLine" />
 
         <Subtitle text="Main Wing" />
         <div className="floor-plan-container main-wing">
           <img src={mainWing} />
         </div>
 
+        <div className="greyLine" />
+
         <Subtitle text="Bedroom Wing" />
         <div className="floor-plan-container bedrooms">
           <img src={bedroomWing} />
         </div>
 
+        <div className="greyLine" />
+
         <Subtitle text="Bridge" />
         <div className="bridge-container">
           <img src={bridge} />
         </div>
+
+        <div className="greyLine" />
 
         <Subtitle text="Site Plan" />
         <div className="site-plan-container">

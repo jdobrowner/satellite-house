@@ -26,20 +26,28 @@ export default class Elevations extends Component {
           <img src={northElevation} />
         </div>
 
+        <div className="greyLine" />
+
         <Subtitle text="West Elevation" />
         <div className="elevation-container">
           <img src={westElevation} />
         </div>
+
+        <div className="greyLine" />
 
         <Subtitle text="South Elevation" />
         <div className="elevation-container">
           <img src={southElevation} />
         </div>
 
+        <div className="greyLine" />
+
         <Subtitle text="East Elevation" />
         <div className="elevation-container">
           <img src={eastElevation} />
         </div>
+
+        <div className="greyLine" />
 
         <Subtitle text="West Section" />
         <div className="elevation-container">
