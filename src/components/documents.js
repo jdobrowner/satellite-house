@@ -1,5 +1,17 @@
 import React, { Component } from 'react';
 import MediaQuery from 'react-responsive';
+import VC_Building_Code from '../../assets/documents/2013_Ventura_County_Building_Code.pdf';
+import FEMA_crawlspace from '../../assets/documents/FEMA_Technical_Bulletin_Crawlspace_Construction.pdf';
+import FEMA_openings from '../../assets/documents/FEMA_Technical_Bulletin_Openings_In_Foundation_Walls.pdf';
+import GA_Checklist from '../../assets/documents/Government_Agencies_Checklist.pdf';
+import NFIP_regulations from '../../assets/documents/NFIP_Regulations.pdf';
+import OV_area_plan from '../../assets/documents/Ojai_Valley_Area_Plan.pdf';
+import study from '../../assets/documents/Study_for_Flood_Hazard_Review.pdf';
+import floodplain from '../../assets/documents/Ventura_County_FLoodplain_Development_Standards.pdf';
+import non_coastal_zoning from '../../assets/documents/Ventura_County_Non_Coastal_Zoning_Ordinance.pdf';
+import zoning_report from '../../assets/documents/Zoning_Report.pdf';
+import book from '../../assets/documents/Satellite_House_Ojai_Book.pdf';
+
 
 export default class Documents extends Component {
   constructor() {
@@ -23,30 +35,32 @@ export default class Documents extends Component {
       <div>
         <MediaQuery maxWidth={669}>
           <div className="documents">
-            <Document cName="odd" big={false} title="Government Agencies Checklist" link="government-agencies-checklist" />
-            <Document cName="even" big={false} title="Zoning Report" link="zoning-report" />
-            <Document cName="odd" big={false} title="Study for Flood Hazard Review" link="study-for-flood-hazard-review" />
-            <Document cName="even" big={false} title="Ventura County Building Code" link="2013-ventura-county-building-code" />
-            <Document cName="odd" big={false} title="Ventura County Non-Coastal Zoning Ordinance" link="ventura-county-non-coastal-zoning-ordinance" />
-            <Document cName="even" big={false} title="Ojai Valley Area Plan" link="ojai-valley-area-plan" />
-            <Document cName="odd" big={false} title="Ventura County Floodplain Development Standards" link="ventura-county-floodplain-development-standards" />
-            <Document cName="even" big={false} title="FEMA Technical Bulletin: Crawlspace Construction" link="fema-technical-bulletin-crawlspace-construction" />
-            <Document cName="odd" big={false} title="FEMA Technical Bulletin: Openings in Foundation Walls" link="fema-technical-bulletin-openings-in-foundation-walls" />
-            <Document cName="even" big={false} title="National Flood Insurance Program Regulations" link="nfip-regulations" />
+            <Document cName="even" big={false} title="Satellite House Design Book" link={book}/>
+            <Document cName="odd" big={false} title="Government Agencies Checklist" link={GA_Checklist}/>
+            <Document cName="even" big={false} title="Zoning Report" link={zoning_report}/>
+            <Document cName="odd" big={false} title="Study for Flood Hazard Review" link={study}/>
+            <Document cName="even" big={false} title="Ventura County Building Code" link={VC_Building_Code}/>
+            <Document cName="odd" big={false} title="Ventura County Non-Coastal Zoning Ordinance" link={non_coastal_zoning}/>
+            <Document cName="even" big={false} title="Ojai Valley Area Plan" link={OV_area_plan}/>
+            <Document cName="odd" big={false} title="Ventura County Floodplain Development Standards" link={floodplain}/>
+            <Document cName="even" big={false} title="FEMA Technical Bulletin: Crawlspace Construction" link={FEMA_crawlspace}/>
+            <Document cName="odd" big={false} title="FEMA Technical Bulletin: Openings in Foundation Walls" link={FEMA_openings}/>
+            <Document cName="even" big={false} title="National Flood Insurance Program Regulations" link={NFIP_regulations}/>
           </div>
         </MediaQuery>
         <MediaQuery minWidth={670}>
           <div className="documents">
-            <Document cName="even" big={true} title="Government Agencies Checklist" link="government-agencies-checklist" />
-            <Document cName="even" big={true} title="Zoning Report" link="zoning-report" />
-            <Document cName="even" big={true} title="Study for Flood Hazard Review" link="study-for-flood-hazard-review" />
-            <Document cName="even" big={true} title="Ventura County Building Code" link="2013-ventura-county-building-code" />
-            <Document cName="even" big={true} title="Ventura County Non-Coastal Zoning Ordinance" link="ventura-county-non-coastal-zoning-ordinance" />
-            <Document cName="even" big={true} title="Ojai Valley Area Plan" link="ojai-valley-area-plan" />
-            <Document cName="even" big={true} title="Ventura County Floodplain Development Standards" link="ventura-county-floodplain-development-standards" />
-            <Document cName="even" big={true} title="FEMA Technical Bulletin: Crawlspace Construction" link="fema-technical-bulletin-crawlspace-construction" />
-            <Document cName="even" big={true} title="FEMA Technical Bulletin: Openings in Foundation Walls" link="fema-technical-bulletin-openings-in-foundation-walls" />
-            <Document cName="even" big={true} title="National Flood Insurance Program Regulations" link="nfip-regulations" />
+            <Document cName="even" big title="Satellite House Design Book" link={book}/>
+            <Document cName="even" big title="Government Agencies Checklist" link={GA_Checklist}/>
+            <Document cName="even" big title="Zoning Report" link={zoning_report}/>
+            <Document cName="even" big title="Study for Flood Hazard Review" link={study}/>
+            <Document cName="even" big title="Ventura County Building Code" link={VC_Building_Code}/>
+            <Document cName="even" big title="Ventura County Non-Coastal Zoning Ordinance" link={non_coastal_zoning}/>
+            <Document cName="even" big title="Ojai Valley Area Plan" link={OV_area_plan}/>
+            <Document cName="even" big title="Ventura County Floodplain Development Standards" link={floodplain}/>
+            <Document cName="even" big title="FEMA Technical Bulletin: Crawlspace Construction" link={FEMA_crawlspace}/>
+            <Document cName="even" big title="FEMA Technical Bulletin: Openings in Foundation Walls" link={FEMA_openings}/>
+            <Document cName="even" big title="National Flood Insurance Program Regulations" link={NFIP_regulations}/>
           </div>
         </MediaQuery>
       </div>
@@ -60,7 +74,7 @@ const Document = (props) => {
       <div className="document-title">
         <h5>{props.title}</h5>
       </div>
-      <a href={`https://www.pdf-archive.com/2017/05/16/${props.link}/${props.link}.pdf`} download>
+      <a href={props.link} download={`${props.title}.pdf`}>
         <div className="download">
           { props.big ? <h6>Download</h6> : <h6>&#11015;</h6> }
         </div>

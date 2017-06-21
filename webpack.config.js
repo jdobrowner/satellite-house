@@ -46,6 +46,11 @@ module.exports = {
               options: {}
           }
         ]
+      },
+      {
+        test: /\.pdf$/,
+        exclude: /node_modules/,
+        use: 'file-loader'
       }
     ],
   },
